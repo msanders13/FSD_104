@@ -4,31 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/bjr1wvl.css">
     <link rel="stylesheet" href="styles/mystyle.css">
-    <title>Petwash: Register Here</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <title>The Petwash</title>
 </head>
 <body>
     <header>
-        <h1 class="display-1">The Furwash</h1>
+        <h1>The Petwash...Register</h1>
 
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="mav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="mav-link" href="services.html">Services</a>
+                <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-                <a class="mav-link" href="register.html" tabindex="-1" aria-disabled="true">Register</a>
+                <a class="nav-link" href="register.html" tabindex="-1" aria-disabled="true">Register</a>
             </li>
         </ul>
     </header>
     <main class="container">
-        <h2>Register</h2>
+        <h2>Register a new pet</h2>
+        <div class="input-container">
+            <div class="form-control">
+                <input type="text" id="txtName" placeholder="Enter pet name">  
+            </div>
+                <div class="form-control">
+                    <input type="text" id="txtAge" placeholder="Enter pet age">  
+                </div>
+                <div class="form-control">
+                    <input type="text" id="txtGender" placeholder="Enter pet Gender">  
+                </div>
+                <div class="form-control">
+                    <input type="text" id="txtBreed" placeholder="Enter pet Breed">  
+                </div>
+                <div class="form-control">
+                    <input type="text" id="txtService" placeholder="Enter pet Service desired">  
+                </div>
+                
+                </div>
+                <div class="form-control">
+                    <input type="text" id="txtpetOwnerContact" placeholder="Enter pet Owner contact info">  
+                </div>
+                    <button class="btnrgstr" onclick="register();">Register</button>
+                </div>
+                <div>
+                    <input type="text" id="txtSearch" placeholder="Enter pet name">
+                    <button onclick="searchPet()">Search</button>
+                    <button id="btnClear" onclick="showPetsCards()">Clear</button>
+                </div>
+                <h2 id="headerList">Pets List</h2>
+                <table id="tbl" class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Pet Name</th>
+                            <th>Pet Age</th>
+                            <th>Pet Gender</th>
+                            <th>Pet Breed</th>
+                            <th>Service</th>
+                            <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scrappy</td>
+                            <td>50</td>
+                            <td>Male</td>
+                            <td>Dane</td>
+                            <td>Grooming</td>
+                            <td>Contact Info Here</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+    <div id="petList" class="pets">
+<!--Display Pets here--> 
+    </div>       
+        
+
+        </div>
     <div id="salonInformation">
     
 
@@ -39,10 +98,7 @@
     </div>
 
     </main>
-    <footer>
-        All Copyrights Reserved 2022 Michael Inc.&copy;
-    </footer>
+    
     <script src="scripts/register.js"></script>
-    <script src="scripts/displayinfo.js"></script>
 </body>
 </html>

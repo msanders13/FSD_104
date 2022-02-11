@@ -1,6 +1,140 @@
-#nav,.nav .navbar-default{
-    background-image: url("img/petbackground.jfif");
-  }
   .nav{
-      
+    background: url(../img/petbackground.jfif);
+    height: 50px;
+    padding-top: 30px;
   }
+
+  .nav-item{
+    display: inline;
+    font-family: sans-serif;
+    margin: 50px;
+  }
+
+  .nav-link{
+    color: Red;
+    text-decoration: none;
+    font-family: bounce-script, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  .container{
+    background: url(../img/cartoonbanner.jfif);
+    width: 100%;
+    height: 120px;
+    margin: 50px auto 50px auto;
+    padding: 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;  
+  }
+
+  .container2{
+    width: 100%;
+    height: 120px;
+    margin: 50px auto 50px auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 3px;  
+  }
+
+  .container3{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inputcontainer{
+    
+  }
+
+  .ul{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+
+  td{
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  th{
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  thead{
+    background: red;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f0f0f2;
+  }
+
+  h1,h2{
+    font-size: 48px;
+    text-align: center;
+    font-family: bounce-script, sans-serif;
+  }
+
+  p{
+    font-size: 38px;
+    text-align: center;
+    font-family: bounce-script, sans-serif;
+  }
+
+  footer{
+    background: url(../img/petbackground.jfif);
+    color: red;
+    font-family: bounce-script, sans-serif;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding:5px;
+    width: 100%;
+    margin-top: auto;
+
+  }
+
+  .form-control{
+    display:inline-block;
+    padding: 5px 30px;
+  }
+
+  
+
+  .btnrgstr{
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-size: large;
+  }
+
+  .btnrgstr:hover {
+
+    background-color: grey;
+    color: darkgrey;
+  }
+
+  .homePic{
+    width: 100%;
+  }
+
+
